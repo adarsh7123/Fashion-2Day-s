@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="login.css">
+  <script>
+    function validateForm() {
+      let y = document.forms["myForm"]["fname"].value;
+      if (y == "") {
+        alert("Name must be filled out");
+        return false;
+      }
+      let x = document.forms["myForm"]["ename"].value;
+      if (x == "") {
+        alert("email must be filled out");
+        return false;
+      }
+    }
+  </script>
+</head>
+
+<body>
+
+  <h2 class="login" style=""> LOGIN </h2>
+
+  <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+    <div class="table"> Name
+      <DIV class="name"><input type="text" maxlength="30" minlength="4" name="fname"></DIV>
+      Email
+      <div class="email"><input type="email" maxlength="30" name="ename"></DIV>
+      <DIV class="submit"><input type="submit" value="Submit"></DIV>
+    </div>
+  </form>
+
+</body>
+
+</html>

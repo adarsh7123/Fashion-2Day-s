@@ -1,0 +1,13 @@
+.table{
+  
+    background-color: deepskyblue;
+    color: black;
+}
+.name ,.table, .login{
+    text-align: center;
+}
+.submit{
+    height: fit-content;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
